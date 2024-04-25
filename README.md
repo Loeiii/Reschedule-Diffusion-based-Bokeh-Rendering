@@ -1,6 +1,6 @@
 # Reschedule-Diffusion-based-Bokeh-Rendering
 
-[Paper](https://github.com/Loeiii/Reschedule-Diffusion-based-Bokeh-Rendering) | [Code](https://github.com/Loeiii/Reschedule-Diffusion-based-Bokeh-Rendering) | [Supplementary material](https://github.com/Loeiii/Reschedule-Diffusion-based-Bokeh-Rendering)
+[Paper](https://github.com/Loeiii/Reschedule-Diffusion-based-Bokeh-Rendering) | [Code](https://github.com/Loeiii/Reschedule-Diffusion-based-Bokeh-Rendering) | [Supplementary material](https://oct.org.cn/IJCAI/Supplementary-material.html)
 
 ## Data
 
