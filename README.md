@@ -31,7 +31,7 @@ python train.py --config=config/defocus.json
 
 ## Inference
 
-We provide `infer.py` for direct inference. Additionally, we offer the final experimental weight files for inference. You can [download](https://drive.google.com/drive/folders/18Df3BIfd5hVf_WLCtZwqLTHnN5XQiB8S?usp=sharing)and place it in the `checkpoint` folder. By running the `infer.py` file, you can complete the result sampling.
+We provide `infer.py` for direct inference. Additionally, we offer the final experimental weight files for inference. You can [download](https://drive.google.com/drive/folders/18Df3BIfd5hVf_WLCtZwqLTHnN5XQiB8S?usp=sharing)and place it in the `checkpoints` folder. By running the `infer.py` file, you can complete the result sampling.
 
 ```
 python infer.py --config=config/infer.json
