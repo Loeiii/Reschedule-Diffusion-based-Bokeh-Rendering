@@ -1,13 +1,19 @@
 ## A  Derivation of the Equation (8)
 
 Typically, we let $\beta$ to vary linearly where $\beta_{end} - \beta_{start} = \gamma$. Consequently, when the number of inference steps is $N$, $\Delta\beta$ is determined as $\gamma/(N - 1)$ and $\beta$ can be represented by Equation~(\ref{eq:beta}),
+
+
 $$
 \begin{align}
     \beta_{i;n} =& \beta_{i;start} + \frac{\gamma}{N - 1}n\\
         = & \beta_{i;end} - \frac{\gamma}{N - 1}(N - 1 - n). \label{eq:beta}
 \end{align}
 $$
+
+
 Correspondingly, $\bar{\alpha}$ can be expressed as follows:
+
+
 $$
 \begin{align}
     \bar{\alpha}_{i;T} &= \prod_{n = 0}^{N - 1}(1 - \beta_{n})\\ 
@@ -15,6 +21,8 @@ $$
         & = \prod_{n = 0}^{N - 1}\left(1 - \left(\beta_{i;end} - \frac{\gamma}{N - 1}n\right)\right),
 \end{align}
 $$
+
+
 which is identical to Equation~(8).
 
 ## B  Additional Experimental Results
@@ -40,9 +48,9 @@ the multiplicative terms in Equation (9) reduce $\gamma$'s impact to some extent
 
 In our sampling process, although we employ the DDPM[^1] sampling method, it is implemented through the non-Markovian reverse process as proposed by DDIM[^2] by setting $\eta  = 1$. Given that the non-Markovian sampling process inherently reduces the number of sampling steps, we deem it essential to additionally compare the results with those of DDIM in this context.
 
-To ensure the fairness of the comparison, we employ a consistent noise rescheduling approach during the sampling process, with $N = 10, \gamma = 0.1$, and also use priors within the DDIM sampling process. As depicted in Table 9[^table 9], there is a certain degree of performance degradation when using DDIM, consistent with the observations made by [^2].
+To ensure the fairness of the comparison, we employ a consistent noise rescheduling approach during the sampling process, with $N = 10, \gamma = 0.1$, and also use priors within the DDIM sampling process. As depicted in Table 9, there is a certain degree of performance degradation when using DDIM, consistent with the observations made by [^2].
 
-[^table 9]:<img src="https://image.oct.org.cn/2024/04/Table9.png" alt="Table9" style="zoom:67%;" />
+<img src="https://image.oct.org.cn/2024/04/Table9.png" alt="Table9" style="zoom:67%;" />
 
 Furthermore, we compared the variability of our method with that of DDIM when using priors.
 As shown in Table 10, the introduction of prior information in the initial state greatly reduces the variability of DDIM in terms of SSIM and LPIPS (as compared with Table 1), further validating the efficacy of our proposed method.
